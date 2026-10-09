@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Номер0к</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="logo">📱 <b>Номер0к</b></div>
+    <div class="stats">
+      <div class="stat">💰 <span id="coins">0</span></div>
+      <div class="stat">⭐ <span id="level">1</span></div>
+    </div>
+  </header>
+  <div class="xp-bar">
+    <div class="xp-fill" id="xpFill"></div>
+    <div class="xp-text"><span id="xp">0</span>/<span id="xpNeed">50</span> XP</div>
+  </div>
+  <main>
+    <section class="card">
+      <h2>🎰 Генератор номеров</h2>
+      <div class="number-preview" id="preview">+___ ___ ___-__-__</div>
+      <div class="rarity-tag" id="rarity">—</div>
+      <button id="genBtn" class="btn primary">Сгенерировать (10 💰)</button>
+    </section>
+    <section class="card">
+      <h2>🎁 Рулетка</h2>
+      <p class="hint">Шанс выпасть редкому номеру ×3</p>
+      <button id="rouletteBtn" class="btn gold">Крутить (100 💰)</button>
+      <div id="rouletteResult" class="hint"></div>
+    </section>
+    <section class="card">
+      <h2>🎒 Инвентарь <span id="invCount" class="badge">0</span></h2>
+      <div id="inventory" class="inventory"></div>
+      <button id="sellAllBtn" class="btn">Продать всё</button>
+    </section>
+  </main>
+  <footer class="disclaimer">
+    ⚠️ Все номера вымышлены. Игра не связана с реальными операторами.
+  </footer>
+  <div id="toast" class="toast"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
